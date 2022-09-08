@@ -1,0 +1,481 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* costom-styles */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+
+/* flex */
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-47{
+    flex:  0 1 47%;
+}
+
+.flex-30{
+    flex: 0 1 30%;
+}
+
+.flex-60{
+    flex: 0 1 60%;
+}
+
+.flex-50{
+    flex: 0 1 50%;
+}
+
+
+.flex-20{
+    flex: 0 1 20%;
+}
+
+.flex-70{
+    flex: 0 1 75%;
+}
+
+.font-0{
+    font-size: 0;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+/* margin */
+
+.margin-top-80{
+    margin-top: 90px;
+}
+
+.margin-top-40{
+    margin-top: 40px;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.margin-top-18{
+    margin-top: 18px;
+}
+
+.margin-top-16{
+    margin-top: 16px;
+}
+
+.margin-top-14{
+    margin-top: 14px;
+}
+
+.margin-top-bottom-8{
+  margin: 6px 0;
+}
+
+.margin-top-bottom-12px{
+    margin: 12px 0;
+}
+
+.margin-bootom{
+    margin-bottom: 80px;
+}
+
+/* padding */
+
+.padding-80-top-bottom{
+    padding: 80px 0;
+}
+
+.padding-40{
+    padding: 40px;
+}
+
+.padding-32{
+    padding: 32px;
+}
+
+.padding-24{
+    padding: 24px;
+}
+
+.padding-20{
+    padding: 20px;
+}
+
+.padding-top-bottom-16{
+  padding: 16px 0;
+}
+
+/* bg-coler */
+
+.bg-color-ED563A{
+    background-color:  #ED563A;
+}
+
+.bg-color-FFFFFF{
+background-color: #FFFFFF;
+}
+
+/* text-color */
+
+.text-white{
+    color: #FFFFFF;
+}
+
+.text-orange{
+    color:   #ED563A;
+    font-weight: 700;
+}
+
+.text-color-dark{
+    color: #28323C;
+}
+
+.text-color-light-gray{
+    color: #727070;
+}
+
+.tex-color-light-BDC0C3{
+    color: #848789;
+}
+
+.text-color-light-blue{
+    color: #84BEFF;
+}
+
+
+
+.font-46{
+    font-size: 56px;
+    font-weight: 800;
+}
+
+.font-24{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.font-20{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.font-22{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.font-18{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.font-14{
+  font-size: 13px;
+}
+
+/* button */
+.btn{
+    text-transform: uppercase;
+    padding: 16px;
+    color: #FFFFFF;
+    border: 0;
+    background-color: #ED563A;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* text-center */
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+/* overlay */
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(35,45,56,0.6);
+}
+
+
+/* header */
+
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.nav-menu a{
+  color: #FFFFFF;
+  margin-left: 40px;
+}
+
+.nav-menu a:hover{
+    color: #ED563A;
+}
+
+.home-menu{
+    color: #ED563A !important;
+    font-weight: 800 !important;
+}
+
+.btn-primary{
+    margin-left: 30px;
+}
+
+
+/* hero-section */
+
+video{
+    width: 100%;
+   height: 100Vh;
+   object-fit: cover;
+}
+
+.hero{
+  position: relative;
+  color: #FFFFFF;
+}
+
+/* info-section */
+
+.choose-col{
+    width: 500px;
+    margin: 60px auto;
+    
+}
+
+/* <!-- Begining-section --> */
+
+.bg-img{
+    background: url(./assets/cta-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 50vh;
+    object-fit: cover;
+}
+
+.begin-col{
+    padding: 135px 0;
+    width: 700px;
+    margin: 0 auto;
+}
+
+/* our-section */
+
+.our-figure{
+    box-shadow: 0 0 6px 1px gainsboro;
+    margin-bottom: 27px;
+}
+
+.our-img{
+    vertical-align: middle;
+}
+.training-class{
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: 20px;
+    color: rgb(48,57,68);
+}
+
+.training-class1{
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.secondry-btn{
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px ;
+}
+
+.our-content{
+    align-items: flex-start;
+}
+
+.border-redius{
+    border-radius: 6px;
+}
+
+/* sechedule-section */
+
+.sehedule-bg-img{
+    height: 100vh;
+    background: url(./assets/schedule-bg.jpg);
+    background-size: cover; 
+}
+
+.schedule-col{
+  padding-top: 85px;
+} 
+
+
+li a:hover{
+  color: #ED563A;
+}
+
+
+.schedule-days a{
+  color:#ffffff;
+}
+
+.schedule-days{
+   margin-top: 60px; 
+}
+
+.schedule-days span{
+    margin: 0 12px;
+}
+
+.schedule-days .active{
+    color: #ED563A;
+}
+
+table{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+td{
+    border: 1px solid;
+    text-align: center;
+    padding: 30px 48px;
+   
+}
+
+
+/* trainer-section */
+
+.trainer-article{
+    box-shadow: 0 0 6px 1px gainsboro;
+}
+
+.trainer-nav a:hover{
+    color: #ED563A;
+    
+}
+
+.trainer-nav a{
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* contect-section */
+
+.contect-bg-img{
+    background: url(assets/contact-bg.jpg) no-repeat;
+    height: 51vh;
+    background-size: cover;
+    
+    padding: 80px 60px;
+}
+
+form{
+    background-color: rgb(245, 239, 239);
+    padding:  32px;
+}
+
+.form-control{
+    border: 1px solid rgb(215, 215, 247);
+    color: #848789;
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    outline: 0;
+}
+
+/* footer */
+
+
